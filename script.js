@@ -20,7 +20,11 @@ if (toggleSwitch) {
 
 /* typing effect */
 var typingEffect = new Typed(".typedText", {
-  strings: ["Web Developer", "Coder"],
+  strings: [
+    "a Back-end Developer",
+    "a Network Enthusiast",
+    "a College Student",
+  ],
   loop: true,
   typeSpeed: 100,
   backSpeed: 50,
