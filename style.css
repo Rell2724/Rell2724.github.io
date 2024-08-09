@@ -540,6 +540,50 @@ i {
   color: var(--text-color);
 }
 
+/*certification box*/
+.certificate-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.certificate-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  height: 100px;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  box-shadow: 1px 8px 10px 2px var(--first-shadow);
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease, height 0.3s ease;
+  text-align: center;
+}
+
+.certificate-box i {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.certificate-box:hover {
+  transform: scale(1.05);
+  height: 200px;
+}
+
+.certificate-box:hover i {
+  display: block;
+  opacity: 1;
+  transform: translateY(10px);
+}
+
 /* contact box */
 .contact-info {
   position: relative;
