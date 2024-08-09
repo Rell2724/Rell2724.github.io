@@ -91,3 +91,37 @@ function scrollActive() {
 }
 
 window.addEventListener("scroll", scrollActive);
+
+/* cv button */
+document.getElementById("cv-button").addEventListener("click", function () {
+  window.location.href =
+    "https://drive.google.com/file/d/1kxY8vGOZ4e8IX6PG9GsldERAnRwAJk_1/view?usp=drive_link";
+});
+
+document.getElementById("cert1").addEventListener("click", function () {
+  window.location.href =
+    "https://drive.google.com/file/d/1ThGSn3kTnqH4N6YSOEYq3HMgYrQ-69_a/view?usp=drive_link";
+});
+
+document.getElementById("cert2").addEventListener("click", function () {
+  window.location.href =
+    "https://drive.google.com/file/d/1ZTVsq24RqK-Xt0C98woTMOfV7XrYgfri/view?usp=drive_link";
+});
+
+document.getElementById("cert3").addEventListener("click", function () {
+  window.location.href =
+    "https://drive.google.com/file/d/1usgvuv5LfCG2J9s62jyWxq0jvbc3F03O/view?usp=drive_link";
+});
+
+document.getElementById("instagramurl").addEventListener("click", function () {
+  window.location.href =
+    "https://www.instagram.com/yeet.rell_?igsh=NG52MnhxbnY1ZTB6";
+});
+
+document.getElementById("linkedinurl").addEventListener("click", function () {
+  window.location.href = "https://www.linkedin.com/in/aptafarrelananto/";
+});
+
+document.getElementById("githuburl").addEventListener("click", function () {
+  window.location.href = "https://github.com/Rell2724";
+});

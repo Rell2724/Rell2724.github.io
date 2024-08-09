@@ -75,19 +75,20 @@
               <p></p>
             </div>
             <div class="text-btn">
-              <button class="btn">
+              <button class="btn" id="cv-button">
                 Checkout my CV <i class="uil uil-file"></i>
               </button>
             </div>
             <div class="social-icons">
-              <div class="icon"><i class="uil uil-instagram"></i></div>
-              <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-              <div class="icon"><i class="uil uil-github-alt"></i></div>
-            </div>
-          </div>
-          <div class="featured-image">
-            <div class="image">
-              <img src="placeholder.jpg" alt="Profile Picture" />
+              <div class="icon" id="instagramurl">
+                <i class="uil uil-instagram"></i>
+              </div>
+              <div class="icon" id="linkedinurl">
+                <i class="uil uil-linkedin-alt"></i>
+              </div>
+              <div class="icon" id="githuburl">
+                <i class="uil uil-github-alt"></i>
+              </div>
             </div>
           </div>
         </section>
@@ -102,16 +103,19 @@
               <div class="about-info">
                 <figure class="about-me">
                   <figcaption>
-                    <h2>Web Developer</h2>
+                    <h2>Muhammad Apta Farrel Ananto</h2>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Maiores quisquam ex, atque, et optio inventore ipsum
-                      officia vitae perspiciatis aperiam quae alias, recusandae
-                      nulla aut repudiandae ut esse. Illo, expedita.
+                      Hello! i'm currently active as college student at
+                      Brawijaya University. I'm diving deep into the world of
+                      back-end development, Aside from my fascination with
+                      back-end tech, I'm also a network enthusiast. I enjoy
+                      exploring how different networks operate and how they can
+                      be optimized. I'm always eager to learn more about the
+                      latest advancements in technology. Whether it's through
+                      coding or network analysis.
                     </p>
                   </figcaption>
                 </figure>
-                <button class="about-me-btn">Hire me</button>
               </div>
             </div>
             <div class="skill">
@@ -125,19 +129,19 @@
                   <span class="skill-text">Laravel</span>
                 </div>
                 <div class="skill-item">
-                  <i class="uil uil-mysql"></i>
+                  <img src="assets/mysql.svg" />
                   <span class="skill-text">MySQL</span>
                 </div>
                 <div class="skill-item">
-                  <i class="uil uil-mysql"></i>
+                  <img src="assets/codeigniter.svg" />
                   <span class="skill-text">Codeigniter</span>
                 </div>
                 <div class="skill-item">
-                  <i class="uil uil-mysql"></i>
+                  <img src="assets/mikrotik.svg" />
                   <span class="skill-text">Mikrotik</span>
                 </div>
                 <div class="skill-item">
-                  <i class="uil uil-mysql"></i>
+                  <img src="assets/premiere.svg" />
                   <span class="skill-text">Premier Pro</span>
                 </div>
               </div>
@@ -151,17 +155,17 @@
             <h1>My Certificate</h1>
           </div>
           <div class="certificate-container">
-            <div class="certificate-box">
+            <div class="certificate-box" id="cert1">
               <h3>Microsoft Technology Associate (MTA)</h3>
               <p>Networking Fundamentals.</p>
               <i>Issued 2021</i>
             </div>
-            <div class="certificate-box">
+            <div class="certificate-box" id="cert2">
               <h3>Microsoft Technology Associate (MTA)</h3>
               <p>Security Fundamentals.</p>
               <i>Issued 2020</i>
             </div>
-            <div class="certificate-box">
+            <div class="certificate-box" id="cert3">
               <h3>Intern Certification</h3>
               <p></p>
               <i>Issued 2022</i>
@@ -176,16 +180,42 @@
           </div>
           <div class="project-container">
             <div class="project-box">
-              <h3>Ticketing</h3>
-              <i>test</i>
+              <h3>Ticketing in C++</h3>
+              <p>Simple Cpp project to calculate the price of the tickets.</p>
+              <a
+                href="https://github.com/Rell2724/SimpleCppTicketing"
+                class="project-link"
+                >Code</a
+              >
             </div>
             <div class="project-box">
-              <h3>Salary Calculation</h3>
-              <i>test</i>
+              <h3>Salary Calculation in C++</h3>
+              <p>Simple Cpp project to calculate the salary for the worker.</p>
+              <a
+                href="https://github.com/Rell2724/PerhitunganGaji-in-cpp"
+                class="project-link"
+                >Code</a
+              >
             </div>
             <div class="project-box">
               <h3>Motrix.id</h3>
-              <i>test</i>
+              <p>
+                Motrix.id is a website for movie enthusiasts that includes
+                multiple payment options.
+              </p>
+              <a
+                href="https://github.com/Rell2724/Motrix.id"
+                class="project-link"
+                >Code</a
+              >
+            </div>
+            <div class="project-box">
+              <h3>Presma UB</h3>
+              <p>
+                Group-based website project for university students who want to
+                register their achievements at the university.
+              </p>
+              <a href="#" class="project-link">Code</a>
             </div>
           </div>
         </section>
@@ -195,10 +225,8 @@
           <div class="top-header">
             <h1>Contact Me</h1>
             <span
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              fugiat possimus ea unde eum perspiciatis voluptate earum rem
-              asperiores quae, quo quaerat at reiciendis placeat ducimus quia
-              odit rerum id.</span
+              >If you have any questions or just want to say hello, feel free to
+              contact me !</span
             >
           </div>
           <div class="row">
@@ -250,7 +278,9 @@
           <ul class="footer-menu">
             <li class="footer-menu-list"><a href="#home">Home</a></li>
             <li class="footer-menu-list"><a href="#about">About Me</a></li>
-            <li class="footer-menu-list"><a href="#certificate">Certificate</a></li>
+            <li class="footer-menu-list">
+              <a href="#certificate">Certificate</a>
+            </li>
             <li class="footer-menu-list"><a href="#projects">Projects</a></li>
             <li class="footer-menu-list"><a href="#contact">Contact</a></li>
           </ul>
